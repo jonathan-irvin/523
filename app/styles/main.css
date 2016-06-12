@@ -34,6 +34,10 @@ a {
   font-weight: bold;
 }
 
+.green {
+  color: #6EB4B5;
+}
+
 h2 {
   font-weight: 900;
   font-style: italic;

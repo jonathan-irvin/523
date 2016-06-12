@@ -1,7 +1,7 @@
-<md-content class="md-hue-1">
+<md-content class="md-hue-1" id="popupContainer">
   <div layout="row">
     <div flex></div>
-    <div flex-sm="80" flex-md="70" flex-lg="50" flex-xl="40">
+    <div flex-sm="95" flex-md="85" flex-lg="70" flex-xl="50">
       <div layout="row">
         <div flex></div>
         <div flex="95">
@@ -10,18 +10,18 @@
           </div>
           <div layout="row" layout-align="center center">
             <span class="light" contenteditable="true">
-              <h2>Welcome to Five Two Three!</h2>              
-              <p>We are the Irvins and over the years of being together, we've created a handful of websites centered in different areas.  We have many websites: some personal, some professional, but all fun.</p>
-              <h2>What is 523?</h2>
-              <p>523 is what you get when an artist and a geek get married.</p>
-              <h2>Thanks for visiting!</h2>
-              <p>Feel free to scroll down <i class="material-icons">arrow_downward</i> and check out our network.</p>
+              <h2>{{welcomeHeader}}</h2>              
+              <p>{{welcomeMessage}}</p>
+              <h2>{{whatHeader}}</h2>
+              <p>{{whatMessage}}</p>
+              <h2>{{thanksHeader}}</h2>
+              <p>{{thanksMessage}}</p>
              </span>
           </div>
         </div>
         <div flex></div>
       </div>
-      <div layout-gt-md="row" layout-sm="column" layout-md="row">
+      <div layout-gt-md="column" layout-sm="column" layout-md="column">
         <div flex>
           <md-card md-whiteframe="5" class="card light-bg" md-theme="default" md-theme-watch style="background-color:#fff">
             <md-card-content layout="row" layout-align="space-between">
@@ -30,7 +30,8 @@
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Two Jelly Beans</span>
-                <span class="md-subhead">This is where the Mr and the Mrs talk about our fun-filled life, the things we create, the places we explore, and the many things we've collected over the years. - <a href="http://twojellybeans.com">twojellybeans.com</a></span>
+                <span class="md-subhead">This is where the Mr and the Mrs talk about our fun-filled life, the things we create, the places we explore, and the many things we've collected over the years.
+                  <br><md-button ng-attr-width="100%" ng-href="http://twojellybeans.com" style="color: #6EB4B5" layout layout-align="center center">twojellybeans.com</md-button></span>
               </md-card-title-text>
             </md-card-title>
             <md-card-actions layout="row">
@@ -61,6 +62,7 @@
             </md-card-actions>
           </md-card>
         </div>
+
       </div>
       <div layout-gt-md="row" layout-sm="column" layout-md="row">
         <div flex>
@@ -71,9 +73,10 @@
               </md-whiteframe>
             </md-card-content>
             <md-card-title>
-              <md-card-title-text>
+              <md-card-title-text flex>
                 <span class="md-headline">Rainiedazze Design</span>
-                <span class="md-subhead">Kelly Irvin, aka Rainiedazze (pronounced rainy days), is a seasoned graphic designer. Here you will find her personal website, including her design portfolio. It's puddles of fun! - <a href="http://rainiedazze.com">rainiedazze.com</a></span>
+                <span class="md-subhead">Kelly Irvin, aka Rainiedazze (pronounced rainy days), is a seasoned graphic designer. Here you will find her personal website, including her design portfolio. It's puddles of fun!
+                  <br><md-button ng-attr-width="100%" ng-href="http://rainiedazze.com" style="color: #6EB4B5" layout layout-align="center center">rainiedazze.com</md-button> </span>
               </md-card-title-text>
             </md-card-title>
             <md-card-actions layout="row">
@@ -132,7 +135,8 @@
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Jonathan Irvin</span>
-                <span class="md-subhead">This is my personal blog where I talk about all sorts of things.  It's my little slice of the internet.  I get to talk about what I want especially if it is geeky things. - <a href="http://jonathanirvin.com">jonathanirvin.com</a></span>
+                <span class="md-subhead">This is my personal blog where get to talk about all sorts of things.  It is my little slice of the internet.  I get to talk about what I want especially if it is geeky things.   &nbsp;
+                  <br><md-button ng-attr-width="100%" ng-href="http://jonathanirvin.com" style="color: #6EB4B5" layout layout-align="center center">jonathanirvin.com</md-button> </span>
               </md-card-title-text>
             </md-card-title>
             <md-card-actions layout="row">
@@ -177,6 +181,7 @@
         </div>
       </div>
       <div layout-gt-md="row" layout-sm="column" layout-md="row">
+        <!-- Two Column -->
         <div flex>
           <md-card md-whiteframe="5" class="card light-bg" md-theme="default" md-theme-watch style="background-color:#fff">
             <md-card-content layout="row" layout-align="space-between">
@@ -187,7 +192,8 @@
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Lone Star Struck</span>
-                <span class="md-subhead">A Fanatical Place for Dallas Cowboys fans.  Originally started by the one and only Kelly Irvin.  <a href="http://lonestarstruck.com">lonestarstruck.com</a></span>
+                <span class="md-subhead">A Fanatical Place for Dallas Cowboys fans.  Originally started by the one and only Kelly Irvin.
+                  <br><md-button ng-attr-width="100%" ng-href="http://lonestarstruck.com" style="color: #6EB4B5" layout layout-align="center center">lonestarstruck.com</md-button></span>
               </md-card-title-text>
             </md-card-title>
             <md-card-actions layout="row">
@@ -222,7 +228,8 @@
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Sublime Geek</span>
-                <span class="md-subhead">If you're a business or individual that needs a website, logo, or just needs to make IT happen...  this is your place. - <a href="http://sublimegeek.com">sublimegeek.com</a></span>
+                <span class="md-subhead">If you're a business or individual that needs a website, logo, or just needs to make IT happen, check us out.
+                <br><md-button ng-attr-width="100%" ng-href="http://sublimegeek.com" style="color: #6EB4B5" layout layout-align="center center">sublimegeek.com</md-button></span>
               </md-card-title-text>
             </md-card-title>
             <md-card-actions layout="row">
@@ -242,6 +249,7 @@
           </md-card>
         </div>
       </div>
+
       <div layout="row">
         <div flex></div>
         <div class="footer">
