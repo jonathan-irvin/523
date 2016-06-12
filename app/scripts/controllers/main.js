@@ -8,10 +8,9 @@
  * Controller of the 523App
  */
 angular.module('523App')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', MainCtrl);
+MainCtrl.$inject = ['$scope'];
+
+function MainCtrl($scope) {
+  $scope.kelly = "Kelly Dayz";
+}

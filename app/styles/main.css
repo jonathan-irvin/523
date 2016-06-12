@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:900,900italic,500,700,400,400italic);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -5,79 +11,92 @@
   padding: 0.2em 0;
 }
 
-body {
-  padding: 0;
+.light {
+  color: rgba(255, 255, 255, 1);
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.light-bg {
+  background-color: rgba(255, 255, 255, 1);
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+.card img {
+  width: 100%;
+  height: auto;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.md-headline {
+  color: #D26471;
+  font-weight: bold;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
+a {
+  color: #6EB4B5;
+  font-weight: bold;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+h2 {
+  font-weight: 900;
+  font-style: italic;
+  color: #F7CDA5;
+  ;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+
+/* Material Icons */
+
+
+/* Rules for sizing the icon. */
+
+.material-icons.md-18 {
+  font-size: 18px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+.material-icons.md-24 {
+  font-size: 24px;
+}
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+
+/* Rules for using icons as black on a light background. */
+
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+
+/* Rules for using icons as white on a dark background. */
+
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
 }
